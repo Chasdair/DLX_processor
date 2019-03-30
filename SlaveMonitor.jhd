@@ -1,0 +1,7 @@
+MODULE SlaveMonitor
+	SUBMODULE ID_NUM
+		INSTANCE XLXI_7
+	SUBMODULE LogicAnalyzer
+		INSTANCE XLXI_8
+	SUBMODULE slave_monitor
+		INSTANCE slave

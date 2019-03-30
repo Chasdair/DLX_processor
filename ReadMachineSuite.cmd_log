@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym ReadMachineSuite E:/adlx/C6/SOURCE_S25/ReadMachineSuite.sch E:/adlx/C6/SOURCE_S25/ReadMachineSuite.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ReadMachineSuite E:/adlx/C6/SOURCE_S25/ReadMachineSuite.sch E:/adlx/C6/SOURCE_S25/ReadMachineSuite.sym 

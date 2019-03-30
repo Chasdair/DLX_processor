@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym GPR E:/adlx/C6/SOURCE_S25/GPR.sch E:/adlx/C6/SOURCE_S25/GPR.sym 

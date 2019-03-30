@@ -1,0 +1,1456 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Top_Level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_Level.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_Level"
+Output Format                      : NGC
+Target Device                      : xc6slx25-2-ftg256
+
+---- Source Options
+Top Module Name                    : Top_Level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\RAM32X32S.vhd" into library work
+Parsing entity <RAM32X8S_MXILINX_slave_monitor>.
+Parsing architecture <BEHAVIORAL> of entity <ram32x8s_mxilinx_slave_monitor>.
+Parsing entity <RAM32X32S>.
+Parsing architecture <Behavioral> of entity <ram32x32s>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\MUX5BIT.VHD" into library work
+Parsing entity <MUX5BIT>.
+Parsing architecture <Behavioral> of entity <mux5bit>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\CNT16.vhd" into library work
+Parsing entity <CNT16>.
+Parsing architecture <Behavioral> of entity <cnt16>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\SyncToClk.vhd" into library work
+Parsing package <SyncToClockPckg>.
+Parsing entity <SyncToClock>.
+Parsing architecture <arch> of entity <synctoclock>.
+Parsing entity <SyncBusToClock>.
+Parsing architecture <arch> of entity <syncbustoclock>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\Common.vhd" into library work
+Parsing package <CommonPckg>.
+Parsing package body <CommonPckg>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\REG32CE.vhd" into library work
+Parsing entity <REG32CE>.
+Parsing architecture <Behavioral> of entity <reg32ce>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\PC.vhf" into library work
+Parsing entity <PC>.
+Parsing architecture <BEHAVIORAL> of entity <pc>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\MUX4_32bit.vhd" into library work
+Parsing entity <MUX4_32bit>.
+Parsing architecture <Behavioral> of entity <mux4_32bit>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\MUX16bit.vhd" into library work
+Parsing entity <MUX16bit>.
+Parsing architecture <Behavioral> of entity <mux16bit>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\MMU.vhd" into library work
+Parsing entity <MMU>.
+Parsing architecture <Behavioral> of entity <mmu>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\IR.vhd" into library work
+Parsing entity <IR>.
+Parsing architecture <Behavioral> of entity <ir>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\GPR.vhf" into library work
+Parsing entity <GPR>.
+Parsing architecture <BEHAVIORAL> of entity <gpr>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\CNT5.VHD" into library work
+Parsing entity <CNT5>.
+Parsing architecture <Behavioral> of entity <cnt5>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\sdram_adapter_U.vhd" into library work
+Parsing entity <sdram_adapter_U>.
+Parsing architecture <Behavioral> of entity <sdram_adapter_u>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" into library work
+Parsing package <SdramCntlPckg>.
+Parsing entity <SdramCntl_U>.
+Parsing architecture <arch> of entity <sdramcntl_u>.
+Parsing entity <DualPort>.
+Parsing architecture <arch> of entity <dualport>.
+Parsing entity <DualPortSdram>.
+Parsing architecture <arch> of entity <dualportsdram>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd" into library work
+Parsing entity <Interface_Ctrl_U>.
+Parsing architecture <Behavioral> of entity <interface_ctrl_u>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd" into library work
+Parsing package <HostIoPckg>.
+Parsing entity <BscanToHostIo>.
+Parsing architecture <arch> of entity <bscantohostio>.
+Parsing entity <HostIoHdrScanner>.
+Parsing architecture <arch> of entity <hostiohdrscanner>.
+Parsing entity <HostIoToRamCore>.
+Parsing architecture <arch> of entity <hostiotoramcore>.
+Parsing entity <RamCtrlSync>.
+Parsing architecture <arch> of entity <ramctrlsync>.
+Parsing entity <HostIoToRam>.
+Parsing architecture <arch> of entity <hostiotoram>.
+Parsing entity <HostIoToDut_U>.
+Parsing architecture <arch> of entity <hostiotodut_u>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\ClkGen_U.vhd" into library work
+Parsing package <ClkGenPckg>.
+Parsing entity <ClkGen_U>.
+Parsing architecture <arch> of entity <clkgen_u>.
+Parsing entity <ClkToLogic>.
+Parsing architecture <arch> of entity <clktologic>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\slave_monitor.vhf" into library work
+Parsing entity <slave_monitor>.
+Parsing architecture <BEHAVIORAL> of entity <slave_monitor>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\MAC.vhd" into library work
+Parsing entity <MAC>.
+Parsing architecture <Behavioral> of entity <mac>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\LogicAnalyzer.vhf" into library work
+Parsing entity <FD8CE_HXILINX_LogicAnalyzer>.
+Parsing architecture <Behavioral> of entity <fd8ce_hxilinx_logicanalyzer>.
+Parsing entity <LogicAnalyzer>.
+Parsing architecture <BEHAVIORAL> of entity <logicanalyzer>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\ID_NUM.vhd" into library work
+Parsing entity <ID_NUM>.
+Parsing architecture <Behavioral> of entity <id_num>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\DLX_CTRL.vhd" into library work
+Parsing entity <DLX_CTRL>.
+Parsing architecture <Behavioral> of entity <dlx_ctrl>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\DataPath.vhf" into library work
+Parsing entity <GPR_MUSER_DataPath>.
+Parsing architecture <BEHAVIORAL> of entity <gpr_muser_datapath>.
+Parsing entity <PC_MUSER_DataPath>.
+Parsing architecture <BEHAVIORAL> of entity <pc_muser_datapath>.
+Parsing entity <DataPath>.
+Parsing architecture <BEHAVIORAL> of entity <datapath>.
+Parsing VHDL file "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd" into library work
+Parsing entity <Sync_U>.
+Parsing architecture <BEHAVIORAL> of entity <sync_u>.
+Parsing entity <IO_LOGIC_U>.
+Parsing architecture <BEHAVIORAL> of entity <io_logic_u>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\SlaveMonitor.vhf" into library work
+Parsing entity <FD8CE_HXILINX_SlaveMonitor>.
+Parsing architecture <Behavioral> of entity <fd8ce_hxilinx_slavemonitor>.
+Parsing entity <LogicAnalyzer_MUSER_SlaveMonitor>.
+Parsing architecture <BEHAVIORAL> of entity <logicanalyzer_muser_slavemonitor>.
+Parsing entity <slave_monitor_MUSER_SlaveMonitor>.
+Parsing architecture <BEHAVIORAL> of entity <slave_monitor_muser_slavemonitor>.
+Parsing entity <SlaveMonitor>.
+Parsing architecture <BEHAVIORAL> of entity <slavemonitor>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\LoadStoreMac.vhf" into library work
+Parsing entity <GPR_MUSER_LoadStoreMac>.
+Parsing architecture <BEHAVIORAL> of entity <gpr_muser_loadstoremac>.
+Parsing entity <PC_MUSER_LoadStoreMac>.
+Parsing architecture <BEHAVIORAL> of entity <pc_muser_loadstoremac>.
+Parsing entity <DataPath_MUSER_LoadStoreMac>.
+Parsing architecture <BEHAVIORAL> of entity <datapath_muser_loadstoremac>.
+Parsing entity <LoadStoreMac>.
+Parsing architecture <BEHAVIORAL> of entity <loadstoremac>.
+Parsing VHDL file "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" into library work
+Parsing entity <FD8CE_HXILINX_Top_Level>.
+Parsing architecture <Behavioral> of entity <fd8ce_hxilinx_top_level>.
+Parsing entity <LogicAnalyzer_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <logicanalyzer_muser_top_level>.
+Parsing entity <slave_monitor_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <slave_monitor_muser_top_level>.
+Parsing entity <SlaveMonitor_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <slavemonitor_muser_top_level>.
+Parsing entity <GPR_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <gpr_muser_top_level>.
+Parsing entity <PC_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <pc_muser_top_level>.
+Parsing entity <DataPath_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <datapath_muser_top_level>.
+Parsing entity <LoadStoreMac_MUSER_Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <loadstoremac_muser_top_level>.
+Parsing entity <Top_Level>.
+Parsing architecture <BEHAVIORAL> of entity <top_level>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <IO_LOGIC_U> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <ClkGen_U> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <ClkToLogic> (architecture <arch>) from library <work>.
+
+Elaborating entity <HostIoToDut_U> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <BscanToHostIo> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <HostIoHdrScanner> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <Interface_Ctrl_U> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd" Line 244: reset_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd" Line 245: ready_clk_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd" Line 252: address_in_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd" Line 253: data_in_s should be on the sensitivity list of the process
+
+Elaborating entity <sdram_adapter_U> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "E:\Lab_base\IO_LOGIC_U\sdram_adapter_U.vhd" Line 107. Case statement is complete. others clause is never selected
+
+Elaborating entity <Sync_U> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <RamCtrlSync> (architecture <arch>) from library <work>.
+
+Elaborating entity <SyncToClock> (architecture <arch>) from library <work>.
+
+Elaborating entity <SdramCntl_U> (architecture <arch>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 436: ba_x should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 460: rdinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 493: bank_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 636: activateinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 650: ba_x should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 652: doactivate_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 654: activateinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 658: bankindex_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 664: rdinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 679: ba_x should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 681: doactivate_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 683: activateinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 687: bankindex_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 691: rdinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 707: doselfrfsh_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 709: activateinprogress_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 731: row_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 732: bank_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 733: row_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 734: bankindex_s should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 754: doselfrfsh_s should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd" Line 771. Case statement is complete. others clause is never selected
+
+Elaborating entity <SlaveMonitor_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <slave_monitor_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MUX4_32bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ID_NUM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LogicAnalyzer_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MUX5BIT> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM32X32S> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM32X8S_MXILINX_slave_monitor> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FD8CE_HXILINX_Top_Level> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CNT5> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 79: Net <D[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 85: Net <XLXI_27_CLR_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 344: Net <M2[31]> does not have a driver.
+
+Elaborating entity <LoadStoreMac_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <DataPath_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <REG32CE> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <IR> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "E:\adlx\C6\SOURCE_S25\IR.vhd" Line 54: ir_en should be on the sensitivity list of the process
+
+Elaborating entity <PC_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CNT16> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <GPR_MUSER_Top_Level> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MUX16bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MMU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MAC> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DLX_CTRL> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 880: Net <MON_DATA[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 881: Net <RACK_N> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" Line 884: Net <R_DO[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+INFO:Xst:3210 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" line 976: Output port <Rsel_o> of the instance <XLXI_23> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <MON_DATA<31:28>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <R_DO> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <RACK_N> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Top_Level> synthesized.
+
+Synthesizing Unit <IO_LOGIC_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd".
+INFO:Xst:3210 - "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd" line 276: Output port <o> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd" line 276: Output port <o_b> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd" line 288: Output port <curr_state_o> of the instance <u2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd" line 320: Output port <sdram_done> of the instance <u3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <IO_LOGIC_U> synthesized.
+
+Synthesizing Unit <ClkGen_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\ClkGen_U.vhd".
+        BASE_FREQ_G = 12.0
+        CLK_MUL_G = 10
+        CLK_DIV_G = 2
+    Summary:
+	no macro.
+Unit <ClkGen_U> synthesized.
+
+Synthesizing Unit <ClkToLogic>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\ClkGen_U.vhd".
+    Summary:
+	no macro.
+Unit <ClkToLogic> synthesized.
+
+Synthesizing Unit <HostIoToDut_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd".
+        ID_G = "11111111"
+        PYLD_CNTR_LENGTH_G = 32
+        FPGA_DEVICE_G = spartan6
+        TAP_USER_INSTR_G = user1
+        SIMPLE_G = true
+INFO:Xst:3210 - "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd" line 951: Output port <pyldCntr_o> of the instance <UHdrScanner> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <opcode_r>.
+    Found 1-bit register for signal <opcodeRcvd_r>.
+    Found 40-bit register for signal <shiftReg_r>.
+    Found 6-bit register for signal <bitCntr_r>.
+    Found 40-bit register for signal <vectorToDut_o>.
+    Found 1-bit register for signal <activateClk_r>.
+    Found 6-bit subtractor for signal <GND_23_o_GND_23_o_sub_8_OUT<5:0>> created at line 1018.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  90 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <HostIoToDut_U> synthesized.
+
+Synthesizing Unit <BscanToHostIo>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd".
+        FPGA_DEVICE_G = spartan6
+        TAP_USER_INSTR_G = user1
+    Summary:
+	no macro.
+Unit <BscanToHostIo> synthesized.
+
+Synthesizing Unit <HostIoHdrScanner>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd".
+        ID_G = "11111111"
+        PYLD_CNTR_LENGTH_G = 32
+    Found 32-bit register for signal <pyldCntr_r>.
+    Found 1-bit register for signal <hdrRcvd_r>.
+    Found 8-bit register for signal <id_r>.
+    Found 32-bit subtractor for signal <GND_51_o_GND_51_o_sub_2_OUT<31:0>> created at line 384.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <HostIoHdrScanner> synthesized.
+
+Synthesizing Unit <Interface_Ctrl_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\Interface_Ctrl_U.vhd".
+WARNING:Xst:647 - Input <input_i<39:38>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MA_i<23:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MA_i<31:25>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <debug_i_sa> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <debug_i_sc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <curr_state>.
+    Found 4-bit register for signal <Rst_proc.resetCnt_v>.
+    Found 1-bit register for signal <done_s>.
+    Found 1-bit register for signal <Ready_clk_i_s>.
+    Found 3-bit register for signal <prev_state>.
+    Found 1-bit register for signal <in_init_s>.
+    Found 32-bit register for signal <address_in_s>.
+    Found 32-bit register for signal <data_in_s>.
+    Found 2-bit register for signal <feedback_done>.
+    Found 1-bit register for signal <in_init_st_s<0>>.
+    Found 1-bit register for signal <in_init_st_s<1>>.
+    Found 1-bit register for signal <step_en_sh_s>.
+    Found 1-bit register for signal <step_en_l_s>.
+    Found 32-bit register for signal <data_out_s>.
+    Found 1-bit register for signal <reset_s>.
+    Found finite state machine <FSM_0> for signal <curr_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | reset_s (positive)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit subtractor for signal <GND_52_o_GND_52_o_sub_2_OUT<3:0>> created at line 169.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DO_s<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 113 D-type flip-flop(s).
+	inferred  32 Latch(s).
+	inferred 175 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Interface_Ctrl_U> synthesized.
+
+Synthesizing Unit <sdram_adapter_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\sdram_adapter_U.vhd".
+WARNING:Xst:647 - Input <opBegun> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdPending> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <done_d>.
+    Found 1-bit register for signal <as_d>.
+    Found 2-bit register for signal <curr_state>.
+    Found 32-bit register for signal <int_DO>.
+    Found 1-bit register for signal <XSA_done_deasserted>.
+    Found finite state machine <FSM_1> for signal <curr_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | bufclk (rising_edge)                           |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sdram_adapter_U> synthesized.
+
+Synthesizing Unit <Sync_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\IO_LOGIC_U.vhd".
+    Summary:
+	no macro.
+Unit <Sync_U> synthesized.
+
+Synthesizing Unit <RamCtrlSync>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\HostIoToDut_U.vhd".
+WARNING:Xst:647 - Input <drck_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <prevCtrlIn_v>.
+    Found 1-bit register for signal <doneOut_o>.
+    Found 1-bit register for signal <ctrlOut_o>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <RamCtrlSync> synthesized.
+
+Synthesizing Unit <SyncToClock>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\SyncToClk.vhd".
+    Found 2-bit register for signal <sync_r>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <SyncToClock> synthesized.
+
+Synthesizing Unit <SdramCntl_U>.
+    Related source file is "E:\Lab_base\IO_LOGIC_U\SdramCntl.vhd".
+        FREQ_G = 60.0
+        IN_PHASE_G = true
+        PIPE_EN_G = false
+        MAX_NOP_G = 10000
+        ENABLE_REFRESH_G = true
+        MULTIPLE_ACTIVE_ROWS_G = false
+        DATA_WIDTH_G = 16
+        NROWS_G = 8192
+        NCOLS_G = 512
+        HADDR_WIDTH_G = 24
+        SADDR_WIDTH_G = 13
+        T_INIT_G = 200000.0
+        T_RAS_G = 45.0
+        T_RCD_G = 20.0
+        T_REF_G = 64000000.0
+        T_RFC_G = 65.0
+        T_RP_G = 20.0
+        T_XSR_G = 75.0
+    Register <wrPipeline_r<0>> equivalent to <sDataDir_r> has been removed
+    Found 14-bit register for signal <rfshCntr_r>.
+    Found 14-bit register for signal <timer_r>.
+    Found 14-bit register for signal <nopCntr_r>.
+    Found 2-bit register for signal <rasTimer_r>.
+    Found 2-bit register for signal <wrTimer_r>.
+    Found 2-bit register for signal <ba_r>.
+    Found 5-bit register for signal <rdPipeline_r>.
+    Found 6-bit register for signal <cmd_r>.
+    Found 13-bit register for signal <sAddr_r>.
+    Found 16-bit register for signal <sData_r>.
+    Found 16-bit register for signal <sdramData_r>.
+    Found 3-bit register for signal <state_r>.
+    Found 9-bit register for signal <refTimer_r>.
+    Found 1-bit register for signal <activeFlag_r>.
+    Found 1-bit register for signal <opBegun_r>.
+    Found 1-bit register for signal <cke_r>.
+    Found 1-bit register for signal <sDataDir_r>.
+    Found 2-bit register for signal <activeBank_r>.
+    Found 13-bit register for signal <activeRow_r<0>>.
+    Found finite state machine <FSM_2> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 4                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | initwait                                       |
+    | Power Up State     | initwait                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <nopCntr_r[13]_GND_92_o_add_11_OUT> created at line 510.
+    Found 14-bit adder for signal <rfshCntr_r[13]_GND_92_o_add_22_OUT> created at line 556.
+    Found 2-bit subtractor for signal <GND_92_o_GND_92_o_sub_16_OUT<1:0>> created at line 526.
+    Found 2-bit subtractor for signal <GND_92_o_GND_92_o_sub_19_OUT<1:0>> created at line 539.
+    Found 9-bit subtractor for signal <GND_92_o_GND_92_o_sub_22_OUT<8:0>> created at line 550.
+    Found 14-bit subtractor for signal <GND_92_o_GND_92_o_sub_27_OUT<13:0>> created at line 565.
+    Found 14-bit subtractor for signal <GND_92_o_GND_92_o_sub_82_OUT<13:0>> created at line 746.
+    Found 13-bit 7-to-1 multiplexer for signal <state_r[2]_col_s[11]_wide_mux_91_OUT> created at line 574.
+    Found 1-bit tristate buffer for signal <sdData_io<15>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<14>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<13>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<12>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<11>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<10>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<9>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<8>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<7>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<6>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<5>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<4>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<3>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<2>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<1>> created at line 394
+    Found 1-bit tristate buffer for signal <sdData_io<0>> created at line 394
+    Found 2-bit comparator not equal for signal <n0026> created at line 493
+    Found 13-bit comparator not equal for signal <n0028> created at line 493
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred 132 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  67 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <SdramCntl_U> synthesized.
+
+Synthesizing Unit <SlaveMonitor_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+WARNING:Xst:653 - Signal <M2<31:16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <SlaveMonitor_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <slave_monitor_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+WARNING:Xst:647 - Input <AI<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <slave_monitor_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <MUX4_32bit>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\MUX4_32bit.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <O> created at line 17.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4_32bit> synthesized.
+
+Synthesizing Unit <ID_NUM>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\ID_NUM.vhd".
+    Summary:
+	no macro.
+Unit <ID_NUM> synthesized.
+
+Synthesizing Unit <LogicAnalyzer_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+    Set property "HU_SET = XLXI_27_1" for instance <XLXI_27>.
+WARNING:Xst:653 - Signal <D<7:5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_27_CLR_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <LogicAnalyzer_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <MUX5BIT>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\MUX5BIT.VHD".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX5BIT> synthesized.
+
+Synthesizing Unit <RAM32X32S>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\RAM32X32S.vhd".
+    Summary:
+	no macro.
+Unit <RAM32X32S> synthesized.
+
+Synthesizing Unit <RAM32X8S_MXILINX_slave_monitor>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\RAM32X32S.vhd".
+    Set property "INIT = 00000000" for instance <O0>.
+    Set property "INIT = 00000000" for instance <O1>.
+    Set property "INIT = 00000000" for instance <O2>.
+    Set property "INIT = 00000000" for instance <O3>.
+    Set property "INIT = 00000000" for instance <O4>.
+    Set property "INIT = 00000000" for instance <O5>.
+    Set property "INIT = 00000000" for instance <O6>.
+    Set property "INIT = 00000000" for instance <O7>.
+    Summary:
+	no macro.
+Unit <RAM32X8S_MXILINX_slave_monitor> synthesized.
+
+Synthesizing Unit <FD8CE_HXILINX_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+    Found 8-bit register for signal <Q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <FD8CE_HXILINX_Top_Level> synthesized.
+
+Synthesizing Unit <CNT5>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\CNT5.VHD".
+    Found 5-bit register for signal <cnt_s>.
+    Found 5-bit adder for signal <cnt_s[4]_GND_119_o_add_0_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <CNT5> synthesized.
+
+Synthesizing Unit <LoadStoreMac_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+    Summary:
+	no macro.
+Unit <LoadStoreMac_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <DataPath_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+WARNING:Xst:647 - Input <A_CE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\adlx\C6\SOURCE_S25\Top_Level.vhf" line 660: Output port <AOUT> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <DataPath_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <REG32CE>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\REG32CE.vhd".
+    Found 32-bit register for signal <DOUT>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <REG32CE> synthesized.
+
+Synthesizing Unit <IR>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\IR.vhd".
+    Found 32-bit register for signal <data>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <IR> synthesized.
+
+Synthesizing Unit <PC_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+    Summary:
+	no macro.
+Unit <PC_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <CNT16>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\CNT16.vhd".
+    Found 16-bit register for signal <cnt_s>.
+    Found 16-bit adder for signal <cnt_s[15]_GND_125_o_add_0_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <CNT16> synthesized.
+
+Synthesizing Unit <GPR_MUSER_Top_Level>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\Top_Level.vhf".
+    Summary:
+	no macro.
+Unit <GPR_MUSER_Top_Level> synthesized.
+
+Synthesizing Unit <MUX16bit>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\MUX16bit.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX16bit> synthesized.
+
+Synthesizing Unit <MMU>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\MMU.vhd".
+    Summary:
+	no macro.
+Unit <MMU> synthesized.
+
+Synthesizing Unit <MAC>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\MAC.vhd".
+    Found 2-bit register for signal <st_curr>.
+    Found 2-bit register for signal <st>.
+    Found finite state machine <FSM_3> for signal <st_curr>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <MAC> synthesized.
+
+Synthesizing Unit <DLX_CTRL>.
+    Related source file is "E:\adlx\C6\SOURCE_S25\DLX_CTRL.vhd".
+    Found 3-bit register for signal <st>.
+    Found finite state machine <FSM_4> for signal <st>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <DLX_CTRL> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 14-bit adder                                          : 2
+ 14-bit subtractor                                     : 2
+ 16-bit adder                                          : 1
+ 2-bit subtractor                                      : 2
+ 32-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 60
+ 1-bit register                                        : 24
+ 13-bit register                                       : 2
+ 14-bit register                                       : 3
+ 16-bit register                                       : 3
+ 2-bit register                                        : 9
+ 3-bit register                                        : 1
+ 32-bit register                                       : 8
+ 4-bit register                                        : 1
+ 40-bit register                                       : 2
+ 5-bit register                                        : 2
+ 6-bit register                                        : 2
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Comparators                                          : 2
+ 13-bit comparator not equal                           : 1
+ 2-bit comparator not equal                            : 1
+# Multiplexers                                         : 263
+ 1-bit 2-to-1 multiplexer                              : 197
+ 10-bit 2-to-1 multiplexer                             : 1
+ 13-bit 2-to-1 multiplexer                             : 1
+ 13-bit 7-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 19
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 10
+ 21-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 40-bit 2-to-1 multiplexer                             : 5
+ 5-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 10
+ 9-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <ba_r_0> has a constant value of 0 in block <u5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ba_r_1> has a constant value of 0 in block <u5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <activeBank_r_0> (without init value) has a constant value of 0 in block <u5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <activeBank_r_1> (without init value) has a constant value of 0 in block <u5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Q_5> has a constant value of 0 in block <XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Q_6> has a constant value of 0 in block <XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Q_7> has a constant value of 0 in block <XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <address_in_s_21> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_22> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_23> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_25> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_26> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_27> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_28> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_29> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_30> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <address_in_s_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <vectorToDut_o_38> of sequential type is unconnected in block <u1>.
+WARNING:Xst:2677 - Node <vectorToDut_o_39> of sequential type is unconnected in block <u1>.
+
+Synthesizing (advanced) Unit <CNT16>.
+The following registers are absorbed into counter <cnt_s>: 1 register on signal <cnt_s>.
+Unit <CNT16> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CNT5>.
+The following registers are absorbed into counter <cnt_s>: 1 register on signal <cnt_s>.
+Unit <CNT5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Interface_Ctrl_U>.
+The following registers are absorbed into counter <Rst_proc.resetCnt_v>: 1 register on signal <Rst_proc.resetCnt_v>.
+Unit <Interface_Ctrl_U> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SdramCntl_U>.
+The following registers are absorbed into counter <timer_r>: 1 register on signal <timer_r>.
+The following registers are absorbed into counter <nopCntr_r>: 1 register on signal <nopCntr_r>.
+Unit <SdramCntl_U> synthesized (advanced).
+WARNING:Xst:2677 - Node <address_in_s_21> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_22> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_23> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_25> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_26> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_27> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_28> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_29> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_30> of sequential type is unconnected in block <Interface_Ctrl_U>.
+WARNING:Xst:2677 - Node <address_in_s_31> of sequential type is unconnected in block <Interface_Ctrl_U>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 1
+ 2-bit subtractor                                      : 2
+ 32-bit subtractor                                     : 1
+ 6-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 5
+ 14-bit down counter                                   : 1
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 4-bit down counter                                    : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 489
+ Flip-Flops                                            : 489
+# Comparators                                          : 2
+ 13-bit comparator not equal                           : 1
+ 2-bit comparator not equal                            : 1
+# Multiplexers                                         : 269
+ 1-bit 2-to-1 multiplexer                              : 206
+ 13-bit 2-to-1 multiplexer                             : 1
+ 13-bit 7-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 17
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 10
+ 21-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 4
+ 40-bit 2-to-1 multiplexer                             : 5
+ 5-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 10
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_23/u2/FSM_0> on signal <curr_state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 100   | 100
+ 011   | 011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_23/u3/FSM_1> on signal <curr_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_23/u5/FSM_2> on signal <state_r[1:3]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ initwait    | 000
+ initpchg    | 001
+ initsetmode | 010
+ initrfsh    | 011
+ rw          | 100
+ activate    | 101
+ refreshrow  | 110
+ selfrefresh | 111
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_73/XLXI_4/FSM_3> on signal <st_curr[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_73/XLXI_8/FSM_4> on signal <st[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 100   | 100
+ 110   | 110
+ 111   | 111
+ 101   | 101
+-------------------
+WARNING:Xst:1293 - FF/Latch <cmd_r_0> has a constant value of 0 in block <SdramCntl_U>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cmd_r_1> has a constant value of 0 in block <SdramCntl_U>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cmd_r_5> has a constant value of 0 in block <SdramCntl_U>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <RAM32X8S_MXILINX_slave_monitor> ...
+
+Optimizing unit <FD8CE_HXILINX_Top_Level> ...
+
+Optimizing unit <REG32CE> ...
+
+Optimizing unit <IR> ...
+
+Optimizing unit <Top_Level> ...
+
+Optimizing unit <Interface_Ctrl_U> ...
+WARNING:Xst:1294 - Latch <DO_s_31> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_30> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_27> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_29> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_28> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_26> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_25> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_24> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_23> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_20> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_22> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_21> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_19> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_18> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_17> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_16> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_13> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_15> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_14> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_12> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_11> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_10> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_9> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_6> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_8> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_7> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_5> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_4> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_3> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_2> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_1> is equivalent to a wire in block <Interface_Ctrl_U>.
+WARNING:Xst:1294 - Latch <DO_s_0> is equivalent to a wire in block <Interface_Ctrl_U>.
+
+Optimizing unit <sdram_adapter_U> ...
+
+Optimizing unit <HostIoToDut_U> ...
+
+Optimizing unit <HostIoHdrScanner> ...
+
+Optimizing unit <LogicAnalyzer_MUSER_Top_Level> ...
+
+Optimizing unit <GPR_MUSER_Top_Level> ...
+
+Optimizing unit <MAC> ...
+
+Optimizing unit <DLX_CTRL> ...
+WARNING:Xst:1293 - FF/Latch <Q_5> has a constant value of 0 in block <XLXI_64/XLXI_8/XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Q_6> has a constant value of 0 in block <XLXI_64/XLXI_8/XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Q_7> has a constant value of 0 in block <XLXI_64/XLXI_8/XLXI_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_23/u5/activeBank_r_1> (without init value) has a constant value of 0 in block <Top_Level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_23/u5/activeBank_r_0> (without init value) has a constant value of 0 in block <Top_Level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_23/u5/ba_r_1> has a constant value of 0 in block <Top_Level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_23/u5/ba_r_0> has a constant value of 0 in block <Top_Level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_23/u5/opBegun_r> of sequential type is unconnected in block <Top_Level>.
+WARNING:Xst:2677 - Node <XLXI_23/u1/vectorToDut_o_39> of sequential type is unconnected in block <Top_Level>.
+WARNING:Xst:2677 - Node <XLXI_23/u1/vectorToDut_o_38> of sequential type is unconnected in block <Top_Level>.
+WARNING:Xst:2398 - RAMs <XLXI_64/XLXI_8/XLXI_26/ram01/O7>, <XLXI_64/XLXI_8/XLXI_26/ram01/O6> are equivalent
+WARNING:Xst:2398 - RAMs <XLXI_64/XLXI_8/XLXI_26/ram01/O7>, <XLXI_64/XLXI_8/XLXI_26/ram10/O3> are equivalent
+WARNING:Xst:2398 - RAMs <XLXI_64/XLXI_8/XLXI_26/ram11/O7>, <XLXI_64/XLXI_8/XLXI_26/ram11/O6> are equivalent
+WARNING:Xst:2398 - RAMs <XLXI_64/XLXI_8/XLXI_26/ram11/O7>, <XLXI_64/XLXI_8/XLXI_26/ram11/O5> are equivalent
+WARNING:Xst:2398 - RAMs <XLXI_64/XLXI_8/XLXI_26/ram11/O7>, <XLXI_64/XLXI_8/XLXI_26/ram11/O4> are equivalent
+WARNING:Xst:1293 - FF/Latch <XLXI_23/u2/Rst_proc.resetCnt_v_3> has a constant value of 0 in block <Top_Level>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <XLXI_23/u5/sDataDir_r> in Unit <Top_Level> is equivalent to the following FF/Latch, which will be removed : <XLXI_23/u5/wrTimer_r_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_Level, actual ratio is 8.
+FlipFlop XLXI_73/XLXI_4/st_curr_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop XLXI_73/XLXI_8/st_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop XLXI_73/XLXI_8/st_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop XLXI_73/XLXI_8/st_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 544
+ Flip-Flops                                            : 544
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_Level.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1057
+#      AND2                        : 2
+#      AND3                        : 1
+#      AND3B1                      : 1
+#      BUF                         : 7
+#      GND                         : 1
+#      INV                         : 70
+#      LUT1                        : 31
+#      LUT2                        : 47
+#      LUT3                        : 69
+#      LUT4                        : 93
+#      LUT5                        : 160
+#      LUT6                        : 317
+#      MUXCY                       : 105
+#      MUXF7                       : 45
+#      OR2                         : 1
+#      OR3B1                       : 1
+#      OR5                         : 1
+#      VCC                         : 1
+#      XORCY                       : 104
+# FlipFlops/Latches                : 545
+#      FD                          : 57
+#      FDC                         : 90
+#      FDCE                        : 46
+#      FDE                         : 211
+#      FDP                         : 9
+#      FDPE                        : 16
+#      FDR                         : 4
+#      FDRE                        : 109
+#      FDSE                        : 2
+#      ODDR2                       : 1
+# RAMS                             : 128
+#      RAM32X1S                    : 128
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 23
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# Logical                          : 2
+#      NAND2B1                     : 1
+#      NOR3                        : 1
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             545  out of  30064     1%  
+ Number of Slice LUTs:                  915  out of  15032     6%  
+    Number used as Logic:               787  out of  15032     5%  
+    Number used as Memory:              128  out of   3664     3%  
+       Number used as RAM:              128
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1077
+   Number with an unused Flip Flop:     532  out of   1077    49%  
+   Number with an unused LUT:           162  out of   1077    15%  
+   Number of fully used LUT-FF pairs:   383  out of   1077    35%  
+   Number of unique control sets:        27
+
+IO Utilization: 
+ Number of IOs:                          41
+ Number of bonded IOBs:                  41  out of    186    22%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+sdClkFb_i                          | BUFGP                            | 543   |
+fpgaClk_i                          | DCM_SP:CLKFX                     | 1     |
+fpgaClk_i                          | DCM_SP:CLKFX180                  | 1     |
+XLXI_23/u1/drck_s                  | NONE(XLXI_23/u1/vectorToDut_o_37)| 129   |
+-----------------------------------+----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.586ns (Maximum Frequency: 104.321MHz)
+   Minimum input arrival time before clock: 4.412ns
+   Maximum output required time after clock: 5.782ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sdClkFb_i'
+  Clock period: 9.586ns (frequency: 104.321MHz)
+  Total number of paths / destination ports: 30017 / 1580
+-------------------------------------------------------------------------
+Delay:               9.586ns (Levels of Logic = 7)
+  Source:            XLXI_73/XLXI_8/st_FSM_FFd3_1 (FF)
+  Destination:       XLXI_23/u2/data_out_s_4 (FF)
+  Source Clock:      sdClkFb_i rising
+  Destination Clock: sdClkFb_i rising
+
+  Data Path: XLXI_73/XLXI_8/st_FSM_FFd3_1 to XLXI_23/u2/data_out_s_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.954  XLXI_73/XLXI_8/st_FSM_FFd3_1 (XLXI_73/XLXI_8/st_FSM_FFd3_1)
+     LUT3:I0->O            2   0.235   1.181  XLXI_73/XLXI_8/IN_INIT1_1 (XLXI_73/XLXI_8/IN_INIT1)
+     OR3B1:I0->O           1   0.254   1.112  XLXI_64/XLXI_8/XLXI_8 (XLXI_64/XLXI_8/LA_RUN)
+     AND2:I1->O           47   0.279   1.771  XLXI_64/XLXI_8/XLXI_6 (XLXI_64/XLXI_8/LA_WE)
+     LUT5:I4->O            5   0.254   0.840  XLXI_64/XLXI_8/XLXI_24/Mmux_O31_1 (XLXI_64/XLXI_8/XLXI_24/Mmux_O31)
+     RAM32X1S:A2->O        1   0.235   0.682  XLXI_64/XLXI_8/XLXI_26/ram00/O0 (XLXI_64/M1<0>)
+     LUT6:I5->O            1   0.254   0.682  XLXI_64/slave/XLXI_1/Mmux_O11 (SDO<0>)
+     LUT6:I5->O            1   0.254   0.000  XLXI_23/u2/Mmux_Data_i_mem[31]_RD_i[31]_mux_51_OUT110 (XLXI_23/u2/Data_i_mem[31]_RD_i[31]_mux_51_OUT<0>)
+     FDRE:D                    0.074          XLXI_23/u2/data_out_s_0
+    ----------------------------------------
+    Total                      9.586ns (2.364ns logic, 7.222ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_23/u1/drck_s'
+  Clock period: 7.071ns (frequency: 141.414MHz)
+  Total number of paths / destination ports: 3726 / 282
+-------------------------------------------------------------------------
+Delay:               7.071ns (Levels of Logic = 4)
+  Source:            XLXI_23/u1/UHdrScanner/hdrRcvd_r (FF)
+  Destination:       XLXI_23/u1/UHdrScanner/pyldCntr_r_30 (FF)
+  Source Clock:      XLXI_23/u1/drck_s rising
+  Destination Clock: XLXI_23/u1/drck_s rising
+
+  Data Path: XLXI_23/u1/UHdrScanner/hdrRcvd_r to XLXI_23/u1/UHdrScanner/pyldCntr_r_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            36   0.525   1.695  XLXI_23/u1/UHdrScanner/hdrRcvd_r (XLXI_23/u1/UHdrScanner/hdrRcvd_r)
+     LUT6:I4->O            1   0.250   1.137  XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o1 (XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o1)
+     LUT6:I0->O            1   0.254   0.682  XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o7 (XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o7)
+     LUT4:I3->O           41   0.254   1.947  XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8 (XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o)
+     LUT4:I0->O            1   0.254   0.000  XLXI_23/u1/UHdrScanner/Mmux_GND_51_o_PWR_18_o_mux_5_OUT110 (XLXI_23/u1/UHdrScanner/GND_51_o_PWR_18_o_mux_5_OUT<0>)
+     FD:D                      0.074          XLXI_23/u1/UHdrScanner/pyldCntr_r_0
+    ----------------------------------------
+    Total                      7.071ns (1.611ns logic, 5.460ns route)
+                                       (22.8% logic, 77.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sdClkFb_i'
+  Total number of paths / destination ports: 74 / 74
+-------------------------------------------------------------------------
+Offset:              4.412ns (Levels of Logic = 1)
+  Source:            XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:DRCK (PAD)
+  Destination:       XLXI_23/u2/address_in_s_24 (FF)
+  Destination Clock: sdClkFb_i rising
+
+  Data Path: XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:DRCK to XLXI_23/u2/address_in_s_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:DRCK  134   0.000   2.542  XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser (XLXI_23/u1/drck_s)
+     LUT5:I2->O           22   0.235   1.333  XLXI_23/u2/_n0392_inv1 (XLXI_23/u2/_n0392_inv)
+     FDE:CE                    0.302          XLXI_23/u2/address_in_s_0
+    ----------------------------------------
+    Total                      4.412ns (0.537ns logic, 3.875ns route)
+                                       (12.2% logic, 87.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_23/u1/drck_s'
+  Total number of paths / destination ports: 126 / 43
+-------------------------------------------------------------------------
+Offset:              3.487ns (Levels of Logic = 2)
+  Source:            XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:RESET (PAD)
+  Destination:       XLXI_23/u1/UHdrScanner/pyldCntr_r_30 (FF)
+  Destination Clock: XLXI_23/u1/drck_s rising
+
+  Data Path: XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:RESET to XLXI_23/u1/UHdrScanner/pyldCntr_r_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:RESET    1   0.000   0.958  XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser (XLXI_23/u1/USimple.UBscanHostIo/bscanReset_s)
+     LUT4:I0->O           41   0.254   1.947  XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o8 (XLXI_23/u1/UHdrScanner/inShiftDr_i_hdrRcvd_r_OR_59_o)
+     LUT4:I0->O            1   0.254   0.000  XLXI_23/u1/UHdrScanner/Mmux_GND_51_o_PWR_18_o_mux_5_OUT110 (XLXI_23/u1/UHdrScanner/GND_51_o_PWR_18_o_mux_5_OUT<0>)
+     FD:D                      0.074          XLXI_23/u1/UHdrScanner/pyldCntr_r_0
+    ----------------------------------------
+    Total                      3.487ns (0.582ns logic, 2.905ns route)
+                                       (16.7% logic, 83.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sdClkFb_i'
+  Total number of paths / destination ports: 49 / 33
+-------------------------------------------------------------------------
+Offset:              5.782ns (Levels of Logic = 2)
+  Source:            XLXI_23/u5/sDataDir_r (FF)
+  Destination:       sdData_io<15> (PAD)
+  Source Clock:      sdClkFb_i rising
+
+  Data Path: XLXI_23/u5/sDataDir_r to sdData_io<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   0.909  XLXI_23/u5/sDataDir_r (XLXI_23/u5/sDataDir_r)
+     INV:I->O             16   0.255   1.181  XLXI_23/u5/sDataDir_r_inv1_INV_0 (XLXI_23/u5/sDataDir_r_inv)
+     IOBUF:T->IO               2.912          sdData_io_15_IOBUF (sdData_io<15>)
+    ----------------------------------------
+    Total                      5.782ns (3.692ns logic, 2.090ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_23/u1/drck_s'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              3.905ns (Levels of Logic = 2)
+  Source:            XLXI_23/u1/UHdrScanner/hdrRcvd_r (FF)
+  Destination:       XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:TDO (PAD)
+  Source Clock:      XLXI_23/u1/drck_s rising
+
+  Data Path: XLXI_23/u1/UHdrScanner/hdrRcvd_r to XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            36   0.525   2.042  XLXI_23/u1/UHdrScanner/hdrRcvd_r (XLXI_23/u1/UHdrScanner/hdrRcvd_r)
+     LUT6:I0->O            2   0.254   0.834  XLXI_23/u1/UHdrScanner/active_o (XLXI_23/u1/active_s)
+     LUT2:I0->O            0   0.250   0.000  XLXI_23/u1/Mmux_tdo_s11 (XLXI_23/u1/tdo_s)
+    BSCAN_SPARTAN6:TDO         0.000          XLXI_23/u1/USimple.UBscanHostIo/spartan6_bscan.UBscanUser
+    ----------------------------------------
+    Total                      3.905ns (1.029ns logic, 2.876ns route)
+                                       (26.4% logic, 73.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_23/u1/drck_s
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+XLXI_23/u1/drck_s|    7.071|         |         |         |
+sdClkFb_i        |    2.724|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sdClkFb_i
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+XLXI_23/u1/drck_s|    9.664|         |         |         |
+sdClkFb_i        |    9.586|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.70 secs
+ 
+--> 
+
+Total memory usage is 284320 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  160 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

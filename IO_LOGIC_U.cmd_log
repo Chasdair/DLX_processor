@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../Lab_base/IO_LOGIC_U/IO_LOGIC_U.vhd -prj SOURCE_S25 -o IO_LOGIC_U.spl -module IO_LOGIC_U -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aartix7 IO_LOGIC_U.spl E:/a_dlx_S25/student2/SOURCE_S25/IO_LOGIC_U.sym 

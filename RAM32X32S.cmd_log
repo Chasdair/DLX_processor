@@ -1,0 +1,2 @@
+vhdtdtfi -lib work RAM32X32S.vhd -prj SOURCE_S25 -o RAM32X32S.spl -module RAM32X32S -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w RAM32X32S.spl E:/adlx/C6/SOURCE_S25/RAM32X32S.sym 

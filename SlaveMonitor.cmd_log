@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym SlaveMonitor E:/adlx/C6/SOURCE_S25/SlaveMonitor.sch E:/adlx/C6/SOURCE_S25/SlaveMonitor.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SlaveMonitor E:/adlx/C6/SOURCE_S25/SlaveMonitor.sch E:/adlx/C6/SOURCE_S25/SlaveMonitor.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SlaveMonitor E:/adlx/C6/SOURCE_S25/SlaveMonitor.sch E:/adlx/C6/SOURCE_S25/SlaveMonitor.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SlaveMonitor E:/adlx/C6/SOURCE_S25/SlaveMonitor.sch E:/adlx/C6/SOURCE_S25/SlaveMonitor.sym 

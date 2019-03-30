@@ -1,0 +1,379 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 06 13:02:13 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sdAddr_o<0>" LOCATE = SITE "E4" LEVEL 1;
+COMP "sdAddr_o<1>" LOCATE = SITE "E3" LEVEL 1;
+COMP "sdAddr_o<2>" LOCATE = SITE "D3" LEVEL 1;
+COMP "sdAddr_o<3>" LOCATE = SITE "C3" LEVEL 1;
+COMP "sdAddr_o<4>" LOCATE = SITE "B12" LEVEL 1;
+COMP "sdAddr_o<5>" LOCATE = SITE "A12" LEVEL 1;
+COMP "sdAddr_o<6>" LOCATE = SITE "D12" LEVEL 1;
+COMP "sdAddr_o<7>" LOCATE = SITE "E12" LEVEL 1;
+COMP "sdAddr_o<8>" LOCATE = SITE "G16" LEVEL 1;
+COMP "sdAddr_o<9>" LOCATE = SITE "G12" LEVEL 1;
+COMP "sdAddr_o<10>" LOCATE = SITE "F4" LEVEL 1;
+COMP "sdAddr_o<11>" LOCATE = SITE "G11" LEVEL 1;
+COMP "sdAddr_o<12>" LOCATE = SITE "H13" LEVEL 1;
+COMP "fpgaClk_i" LOCATE = SITE "A9" LEVEL 1;
+COMP "sdClkFb_i" LOCATE = SITE "K12" LEVEL 1;
+COMP "sdBs_o<0>" LOCATE = SITE "H3" LEVEL 1;
+COMP "sdBs_o<1>" LOCATE = SITE "G3" LEVEL 1;
+COMP "sdCe_bo" LOCATE = SITE "H4" LEVEL 1;
+COMP "sdCke_o" LOCATE = SITE "J12" LEVEL 1;
+COMP "sdClk_o" LOCATE = SITE "K11" LEVEL 1;
+COMP "sdWe_bo" LOCATE = SITE "M3" LEVEL 1;
+COMP "sdData_io<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "sdData_io<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "sdData_io<2>" LOCATE = SITE "T5" LEVEL 1;
+COMP "sdData_io<3>" LOCATE = SITE "P5" LEVEL 1;
+COMP "sdData_io<4>" LOCATE = SITE "R5" LEVEL 1;
+COMP "sdData_io<5>" LOCATE = SITE "N5" LEVEL 1;
+COMP "sdData_io<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "sdData_io<7>" LOCATE = SITE "N4" LEVEL 1;
+COMP "sdData_io<8>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sdData_io<9>" LOCATE = SITE "R12" LEVEL 1;
+COMP "sdCas_bo" LOCATE = SITE "L3" LEVEL 1;
+COMP "sdDqmh_o" LOCATE = SITE "L13" LEVEL 1;
+COMP "sdDqml_o" LOCATE = SITE "M4" LEVEL 1;
+COMP "sdRas_bo" LOCATE = SITE "L4" LEVEL 1;
+COMP "sdData_io<10>" LOCATE = SITE "T13" LEVEL 1;
+COMP "sdData_io<11>" LOCATE = SITE "T14" LEVEL 1;
+COMP "sdData_io<12>" LOCATE = SITE "R14" LEVEL 1;
+COMP "sdData_io<13>" LOCATE = SITE "T15" LEVEL 1;
+COMP "sdData_io<14>" LOCATE = SITE "T12" LEVEL 1;
+COMP "sdData_io<15>" LOCATE = SITE "P11" LEVEL 1;
+TIMEGRP sdClkFb_i = BEL "XLXI_23/u4/u1/prevCtrlIn_v" BEL
+        "XLXI_23/u4/u0/prevCtrlIn_v" BEL "XLXI_23/u4/u0/UCtrlSync/sync_r_2"
+        BEL "XLXI_23/u4/u0/UCtrlSync/sync_r_1" BEL
+        "XLXI_23/u4/u1/UCtrlSync/sync_r_2" BEL
+        "XLXI_23/u4/u1/UCtrlSync/sync_r_1" BEL "XLXI_64/slave/XLXI_4" BEL
+        "XLXI_64/slave/XLXI_3" BEL "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_0" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_1" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_2" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_3" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_4" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_5" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_6" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_7" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_8" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_9" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_10" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_11" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_12" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_13" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_14" BEL
+        "XLXI_73/XLXI_3/XLXI_4/PCADDR/cnt_s_15" BEL
+        "XLXI_23/u5/state_r_FSM_FFd1" BEL "XLXI_23/u5/state_r_FSM_FFd2" BEL
+        "XLXI_23/u5/state_r_FSM_FFd3" BEL "XLXI_23/u5/nopCntr_r_13" BEL
+        "XLXI_23/u5/nopCntr_r_12" BEL "XLXI_23/u5/nopCntr_r_11" BEL
+        "XLXI_23/u5/nopCntr_r_10" BEL "XLXI_23/u5/nopCntr_r_9" BEL
+        "XLXI_23/u5/nopCntr_r_8" BEL "XLXI_23/u5/nopCntr_r_7" BEL
+        "XLXI_23/u5/nopCntr_r_6" BEL "XLXI_23/u5/nopCntr_r_5" BEL
+        "XLXI_23/u5/nopCntr_r_4" BEL "XLXI_23/u5/nopCntr_r_3" BEL
+        "XLXI_23/u5/nopCntr_r_2" BEL "XLXI_23/u5/nopCntr_r_1" BEL
+        "XLXI_23/u5/nopCntr_r_0" BEL "XLXI_23/u5/timer_r_13" BEL
+        "XLXI_23/u5/timer_r_12" BEL "XLXI_23/u5/timer_r_11" BEL
+        "XLXI_23/u5/timer_r_10" BEL "XLXI_23/u5/timer_r_9" BEL
+        "XLXI_23/u5/timer_r_8" BEL "XLXI_23/u5/timer_r_7" BEL
+        "XLXI_23/u5/timer_r_6" BEL "XLXI_23/u5/timer_r_5" BEL
+        "XLXI_23/u5/timer_r_4" BEL "XLXI_23/u5/timer_r_3" BEL
+        "XLXI_23/u5/timer_r_2" BEL "XLXI_23/u5/timer_r_1" BEL
+        "XLXI_23/u5/timer_r_0" BEL "XLXI_23/u5/rfshCntr_r_13" BEL
+        "XLXI_23/u5/rfshCntr_r_12" BEL "XLXI_23/u5/rfshCntr_r_11" BEL
+        "XLXI_23/u5/rfshCntr_r_10" BEL "XLXI_23/u5/rfshCntr_r_9" BEL
+        "XLXI_23/u5/rfshCntr_r_8" BEL "XLXI_23/u5/rfshCntr_r_7" BEL
+        "XLXI_23/u5/rfshCntr_r_6" BEL "XLXI_23/u5/rfshCntr_r_5" BEL
+        "XLXI_23/u5/rfshCntr_r_4" BEL "XLXI_23/u5/rfshCntr_r_3" BEL
+        "XLXI_23/u5/rfshCntr_r_2" BEL "XLXI_23/u5/rfshCntr_r_1" BEL
+        "XLXI_23/u5/rfshCntr_r_0" BEL "XLXI_23/u5/sAddr_r_12" BEL
+        "XLXI_23/u5/sAddr_r_11" BEL "XLXI_23/u5/sAddr_r_10" BEL
+        "XLXI_23/u5/sAddr_r_9" BEL "XLXI_23/u5/sAddr_r_8" BEL
+        "XLXI_23/u5/sAddr_r_7" BEL "XLXI_23/u5/sAddr_r_6" BEL
+        "XLXI_23/u5/sAddr_r_5" BEL "XLXI_23/u5/sAddr_r_4" BEL
+        "XLXI_23/u5/sAddr_r_3" BEL "XLXI_23/u5/sAddr_r_2" BEL
+        "XLXI_23/u5/sAddr_r_1" BEL "XLXI_23/u5/sAddr_r_0" BEL
+        "XLXI_23/u5/sDataDir_r" BEL "XLXI_23/u5/cke_r" BEL
+        "XLXI_23/u5/rdPipeline_r_4" BEL "XLXI_23/u5/rdPipeline_r_3" BEL
+        "XLXI_23/u5/rdPipeline_r_2" BEL "XLXI_23/u5/rdPipeline_r_1" BEL
+        "XLXI_23/u5/rdPipeline_r_0" BEL "XLXI_23/u5/rasTimer_r_1" BEL
+        "XLXI_23/u5/rasTimer_r_0" BEL "XLXI_23/u5/refTimer_r_8" BEL
+        "XLXI_23/u5/refTimer_r_7" BEL "XLXI_23/u5/refTimer_r_6" BEL
+        "XLXI_23/u5/refTimer_r_5" BEL "XLXI_23/u5/refTimer_r_4" BEL
+        "XLXI_23/u5/refTimer_r_3" BEL "XLXI_23/u5/refTimer_r_2" BEL
+        "XLXI_23/u5/refTimer_r_1" BEL "XLXI_23/u5/refTimer_r_0" BEL
+        "XLXI_23/u5/cmd_r_4" BEL "XLXI_23/u5/cmd_r_3" BEL "XLXI_23/u5/cmd_r_2"
+        BEL "XLXI_23/u5/activeRow_r_0_12" BEL "XLXI_23/u5/activeRow_r_0_11"
+        BEL "XLXI_23/u5/activeRow_r_0_10" BEL "XLXI_23/u5/activeRow_r_0_9" BEL
+        "XLXI_23/u5/activeRow_r_0_8" BEL "XLXI_23/u5/activeRow_r_0_7" BEL
+        "XLXI_23/u5/activeRow_r_0_6" BEL "XLXI_23/u5/activeRow_r_0_5" BEL
+        "XLXI_23/u5/activeRow_r_0_4" BEL "XLXI_23/u5/activeRow_r_0_3" BEL
+        "XLXI_23/u5/activeRow_r_0_2" BEL "XLXI_23/u5/activeRow_r_0_1" BEL
+        "XLXI_23/u5/activeRow_r_0_0" BEL "XLXI_23/u2/Rst_proc.resetCnt_v_2"
+        BEL "XLXI_23/u2/Rst_proc.resetCnt_v_1" BEL
+        "XLXI_23/u2/Rst_proc.resetCnt_v_0" BEL
+        "XLXI_23/u2/curr_state_FSM_FFd2" BEL "XLXI_23/u2/curr_state_FSM_FFd3"
+        BEL "XLXI_23/u2/curr_state_FSM_FFd1" BEL "XLXI_23/u2/data_out_s_31"
+        BEL "XLXI_23/u2/data_out_s_30" BEL "XLXI_23/u2/data_out_s_29" BEL
+        "XLXI_23/u2/data_out_s_28" BEL "XLXI_23/u2/data_out_s_27" BEL
+        "XLXI_23/u2/data_out_s_26" BEL "XLXI_23/u2/data_out_s_25" BEL
+        "XLXI_23/u2/data_out_s_24" BEL "XLXI_23/u2/data_out_s_23" BEL
+        "XLXI_23/u2/data_out_s_22" BEL "XLXI_23/u2/data_out_s_21" BEL
+        "XLXI_23/u2/data_out_s_20" BEL "XLXI_23/u2/data_out_s_19" BEL
+        "XLXI_23/u2/data_out_s_18" BEL "XLXI_23/u2/data_out_s_17" BEL
+        "XLXI_23/u2/data_out_s_16" BEL "XLXI_23/u2/data_out_s_15" BEL
+        "XLXI_23/u2/data_out_s_14" BEL "XLXI_23/u2/data_out_s_13" BEL
+        "XLXI_23/u2/data_out_s_12" BEL "XLXI_23/u2/data_out_s_11" BEL
+        "XLXI_23/u2/data_out_s_10" BEL "XLXI_23/u2/data_out_s_9" BEL
+        "XLXI_23/u2/data_out_s_8" BEL "XLXI_23/u2/data_out_s_7" BEL
+        "XLXI_23/u2/data_out_s_6" BEL "XLXI_23/u2/data_out_s_5" BEL
+        "XLXI_23/u2/data_out_s_4" BEL "XLXI_23/u2/data_out_s_3" BEL
+        "XLXI_23/u2/data_out_s_2" BEL "XLXI_23/u2/data_out_s_1" BEL
+        "XLXI_23/u2/data_out_s_0" BEL "XLXI_23/u2/feedback_done_1" BEL
+        "XLXI_23/u2/feedback_done_0" BEL "XLXI_23/u2/prev_state_2" BEL
+        "XLXI_23/u2/prev_state_1" BEL "XLXI_23/u2/prev_state_0" BEL
+        "XLXI_23/u2/data_in_s_31" BEL "XLXI_23/u2/data_in_s_30" BEL
+        "XLXI_23/u2/data_in_s_29" BEL "XLXI_23/u2/data_in_s_28" BEL
+        "XLXI_23/u2/data_in_s_27" BEL "XLXI_23/u2/data_in_s_26" BEL
+        "XLXI_23/u2/data_in_s_25" BEL "XLXI_23/u2/data_in_s_24" BEL
+        "XLXI_23/u2/data_in_s_23" BEL "XLXI_23/u2/data_in_s_22" BEL
+        "XLXI_23/u2/data_in_s_21" BEL "XLXI_23/u2/data_in_s_20" BEL
+        "XLXI_23/u2/data_in_s_19" BEL "XLXI_23/u2/data_in_s_18" BEL
+        "XLXI_23/u2/data_in_s_17" BEL "XLXI_23/u2/data_in_s_16" BEL
+        "XLXI_23/u2/data_in_s_15" BEL "XLXI_23/u2/data_in_s_14" BEL
+        "XLXI_23/u2/data_in_s_13" BEL "XLXI_23/u2/data_in_s_12" BEL
+        "XLXI_23/u2/data_in_s_11" BEL "XLXI_23/u2/data_in_s_10" BEL
+        "XLXI_23/u2/data_in_s_9" BEL "XLXI_23/u2/data_in_s_8" BEL
+        "XLXI_23/u2/data_in_s_7" BEL "XLXI_23/u2/data_in_s_6" BEL
+        "XLXI_23/u2/data_in_s_5" BEL "XLXI_23/u2/data_in_s_4" BEL
+        "XLXI_23/u2/data_in_s_3" BEL "XLXI_23/u2/data_in_s_2" BEL
+        "XLXI_23/u2/data_in_s_1" BEL "XLXI_23/u2/data_in_s_0" BEL
+        "XLXI_23/u2/address_in_s_24" BEL "XLXI_23/u2/address_in_s_20" BEL
+        "XLXI_23/u2/address_in_s_19" BEL "XLXI_23/u2/address_in_s_18" BEL
+        "XLXI_23/u2/address_in_s_17" BEL "XLXI_23/u2/address_in_s_16" BEL
+        "XLXI_23/u2/address_in_s_15" BEL "XLXI_23/u2/address_in_s_14" BEL
+        "XLXI_23/u2/address_in_s_13" BEL "XLXI_23/u2/address_in_s_12" BEL
+        "XLXI_23/u2/address_in_s_11" BEL "XLXI_23/u2/address_in_s_10" BEL
+        "XLXI_23/u2/address_in_s_9" BEL "XLXI_23/u2/address_in_s_8" BEL
+        "XLXI_23/u2/address_in_s_7" BEL "XLXI_23/u2/address_in_s_6" BEL
+        "XLXI_23/u2/address_in_s_5" BEL "XLXI_23/u2/address_in_s_4" BEL
+        "XLXI_23/u2/address_in_s_3" BEL "XLXI_23/u2/address_in_s_2" BEL
+        "XLXI_23/u2/address_in_s_1" BEL "XLXI_23/u2/address_in_s_0" BEL
+        "XLXI_23/u2/in_init_s" BEL "XLXI_23/u2/step_en_sh_s" BEL
+        "XLXI_23/u2/Ready_clk_i_s" BEL "XLXI_23/u3/curr_state_FSM_FFd2" BEL
+        "XLXI_23/u3/curr_state_FSM_FFd1" BEL "XLXI_23/u3/done_d" BEL
+        "XLXI_23/u3/int_DO_31" BEL "XLXI_23/u3/int_DO_30" BEL
+        "XLXI_23/u3/int_DO_29" BEL "XLXI_23/u3/int_DO_28" BEL
+        "XLXI_23/u3/int_DO_27" BEL "XLXI_23/u3/int_DO_26" BEL
+        "XLXI_23/u3/int_DO_25" BEL "XLXI_23/u3/int_DO_24" BEL
+        "XLXI_23/u3/int_DO_23" BEL "XLXI_23/u3/int_DO_22" BEL
+        "XLXI_23/u3/int_DO_21" BEL "XLXI_23/u3/int_DO_20" BEL
+        "XLXI_23/u3/int_DO_19" BEL "XLXI_23/u3/int_DO_18" BEL
+        "XLXI_23/u3/int_DO_17" BEL "XLXI_23/u3/int_DO_16" BEL
+        "XLXI_23/u3/int_DO_15" BEL "XLXI_23/u3/int_DO_14" BEL
+        "XLXI_23/u3/int_DO_13" BEL "XLXI_23/u3/int_DO_12" BEL
+        "XLXI_23/u3/int_DO_11" BEL "XLXI_23/u3/int_DO_10" BEL
+        "XLXI_23/u3/int_DO_9" BEL "XLXI_23/u3/int_DO_8" BEL
+        "XLXI_23/u3/int_DO_7" BEL "XLXI_23/u3/int_DO_6" BEL
+        "XLXI_23/u3/int_DO_5" BEL "XLXI_23/u3/int_DO_4" BEL
+        "XLXI_23/u3/int_DO_3" BEL "XLXI_23/u3/int_DO_2" BEL
+        "XLXI_23/u3/int_DO_1" BEL "XLXI_23/u3/int_DO_0" BEL "XLXI_23/u3/as_d"
+        BEL "XLXI_64/XLXI_8/XLXI_29/cnt_s_4" BEL
+        "XLXI_64/XLXI_8/XLXI_29/cnt_s_3" BEL "XLXI_64/XLXI_8/XLXI_29/cnt_s_2"
+        BEL "XLXI_64/XLXI_8/XLXI_29/cnt_s_1" BEL
+        "XLXI_64/XLXI_8/XLXI_29/cnt_s_0" BEL "XLXI_64/XLXI_8/XLXI_28" BEL
+        "XLXI_64/XLXI_8/XLXI_7" BEL "XLXI_64/XLXI_8/XLXI_26/ram00/O7" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O6" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O5" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O4" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O3" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O2" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O1" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram00/O0" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O7" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O6" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O5" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O4" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O3" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O2" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O1" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram01/O0" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O7" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O6" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O5" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O4" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O3" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O2" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O1" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram10/O0" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O7" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O6" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O5" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O4" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O3" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O2" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O1" BEL
+        "XLXI_64/XLXI_8/XLXI_26/ram11/O0" BEL "XLXI_64/XLXI_8/XLXI_27/Q_0" BEL
+        "XLXI_64/XLXI_8/XLXI_27/Q_1" BEL "XLXI_64/XLXI_8/XLXI_27/Q_2" BEL
+        "XLXI_64/XLXI_8/XLXI_27/Q_3" BEL "XLXI_64/XLXI_8/XLXI_27/Q_4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram00/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram01/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram10/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_D/ram11/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram00/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram01/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram10/O7" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O0" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O1" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O2" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O3" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O4" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O5" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O6" BEL
+        "XLXI_73/XLXI_3/XLXI_5/RAM_B/ram11/O7" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_31" BEL "XLXI_73/XLXI_3/B_REG/DOUT_30" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_29" BEL "XLXI_73/XLXI_3/B_REG/DOUT_28" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_27" BEL "XLXI_73/XLXI_3/B_REG/DOUT_26" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_25" BEL "XLXI_73/XLXI_3/B_REG/DOUT_24" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_23" BEL "XLXI_73/XLXI_3/B_REG/DOUT_22" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_21" BEL "XLXI_73/XLXI_3/B_REG/DOUT_20" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_19" BEL "XLXI_73/XLXI_3/B_REG/DOUT_18" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_17" BEL "XLXI_73/XLXI_3/B_REG/DOUT_16" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_15" BEL "XLXI_73/XLXI_3/B_REG/DOUT_14" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_13" BEL "XLXI_73/XLXI_3/B_REG/DOUT_12" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_11" BEL "XLXI_73/XLXI_3/B_REG/DOUT_10" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_9" BEL "XLXI_73/XLXI_3/B_REG/DOUT_8" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_7" BEL "XLXI_73/XLXI_3/B_REG/DOUT_6" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_5" BEL "XLXI_73/XLXI_3/B_REG/DOUT_4" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_3" BEL "XLXI_73/XLXI_3/B_REG/DOUT_2" BEL
+        "XLXI_73/XLXI_3/B_REG/DOUT_1" BEL "XLXI_73/XLXI_3/B_REG/DOUT_0" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_31" BEL "XLXI_73/XLXI_3/C_REG/DOUT_30" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_29" BEL "XLXI_73/XLXI_3/C_REG/DOUT_28" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_27" BEL "XLXI_73/XLXI_3/C_REG/DOUT_26" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_25" BEL "XLXI_73/XLXI_3/C_REG/DOUT_24" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_23" BEL "XLXI_73/XLXI_3/C_REG/DOUT_22" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_21" BEL "XLXI_73/XLXI_3/C_REG/DOUT_20" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_19" BEL "XLXI_73/XLXI_3/C_REG/DOUT_18" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_17" BEL "XLXI_73/XLXI_3/C_REG/DOUT_16" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_15" BEL "XLXI_73/XLXI_3/C_REG/DOUT_14" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_13" BEL "XLXI_73/XLXI_3/C_REG/DOUT_12" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_11" BEL "XLXI_73/XLXI_3/C_REG/DOUT_10" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_9" BEL "XLXI_73/XLXI_3/C_REG/DOUT_8" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_7" BEL "XLXI_73/XLXI_3/C_REG/DOUT_6" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_5" BEL "XLXI_73/XLXI_3/C_REG/DOUT_4" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_3" BEL "XLXI_73/XLXI_3/C_REG/DOUT_2" BEL
+        "XLXI_73/XLXI_3/C_REG/DOUT_1" BEL "XLXI_73/XLXI_3/C_REG/DOUT_0" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_31" BEL "XLXI_73/XLXI_3/XLXI_2/data_30"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_29" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_28" BEL "XLXI_73/XLXI_3/XLXI_2/data_27"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_26" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_20" BEL "XLXI_73/XLXI_3/XLXI_2/data_19"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_18" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_17" BEL "XLXI_73/XLXI_3/XLXI_2/data_16"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_15" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_14" BEL "XLXI_73/XLXI_3/XLXI_2/data_13"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_12" BEL
+        "XLXI_73/XLXI_3/XLXI_2/data_11" BEL "XLXI_73/XLXI_3/XLXI_2/data_10"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_9" BEL "XLXI_73/XLXI_3/XLXI_2/data_8"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_7" BEL "XLXI_73/XLXI_3/XLXI_2/data_6"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_5" BEL "XLXI_73/XLXI_3/XLXI_2/data_4"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_3" BEL "XLXI_73/XLXI_3/XLXI_2/data_2"
+        BEL "XLXI_73/XLXI_3/XLXI_2/data_1" BEL "XLXI_73/XLXI_3/XLXI_2/data_0"
+        BEL "XLXI_73/XLXI_4/st_curr_FSM_FFd1" BEL
+        "XLXI_73/XLXI_4/st_curr_FSM_FFd2" BEL "XLXI_73/XLXI_4/st_1" BEL
+        "XLXI_73/XLXI_4/st_0" BEL "XLXI_73/XLXI_8/st_FSM_FFd2" BEL
+        "XLXI_73/XLXI_8/st_FSM_FFd3" BEL "XLXI_73/XLXI_8/st_FSM_FFd1" BEL
+        "XLXI_23/u4/u1/ctrlOut_o" BEL "XLXI_23/u4/u1/doneOut_o" BEL
+        "XLXI_23/u4/u0/ctrlOut_o" BEL "XLXI_23/u4/u0/doneOut_o" BEL
+        "XLXI_23/u2/done_s" BEL "XLXI_23/u2/in_init_st_s_1" BEL
+        "XLXI_23/u2/in_init_st_s_0" BEL "XLXI_23/u2/step_en_l_s" BEL
+        "XLXI_23/u2/reset_s" BEL "XLXI_23/u3/XSA_done_deasserted" BEL
+        "XLXI_23/u5/wrTimer_r_0" BEL "XLXI_23/u5/activeFlag_r_0" BEL
+        "XLXI_73/XLXI_8/st_FSM_FFd2_1" BEL "XLXI_73/XLXI_8/st_FSM_FFd1_1" BEL
+        "XLXI_73/XLXI_8/st_FSM_FFd3_1" BEL "XLXI_73/XLXI_4/st_curr_FSM_FFd2_1"
+        BEL "XLXI_23/u5/sdramData_r_0" BEL "XLXI_23/u5/sdramData_r_1" BEL
+        "XLXI_23/u5/sdramData_r_2" BEL "XLXI_23/u5/sdramData_r_3" BEL
+        "XLXI_23/u5/sdramData_r_4" BEL "XLXI_23/u5/sdramData_r_5" BEL
+        "XLXI_23/u5/sdramData_r_6" BEL "XLXI_23/u5/sdramData_r_7" BEL
+        "XLXI_23/u5/sdramData_r_8" BEL "XLXI_23/u5/sdramData_r_9" BEL
+        "XLXI_23/u5/sdramData_r_10" BEL "XLXI_23/u5/sdramData_r_11" BEL
+        "XLXI_23/u5/sdramData_r_12" BEL "XLXI_23/u5/sdramData_r_13" BEL
+        "XLXI_23/u5/sdramData_r_14" BEL "XLXI_23/u5/sdramData_r_15" BEL
+        "sdClkFb_i_BUFGP/BUFG" BEL "XLXI_23/u5/sData_r_15" BEL
+        "XLXI_23/u5/sData_r_14" BEL "XLXI_23/u5/sData_r_13" BEL
+        "XLXI_23/u5/sData_r_12" BEL "XLXI_23/u5/sData_r_11" BEL
+        "XLXI_23/u5/sData_r_10" BEL "XLXI_23/u5/sData_r_9" BEL
+        "XLXI_23/u5/sData_r_8" BEL "XLXI_23/u5/sData_r_7" BEL
+        "XLXI_23/u5/sData_r_6" BEL "XLXI_23/u5/sData_r_5" BEL
+        "XLXI_23/u5/sData_r_4" BEL "XLXI_23/u5/sData_r_3" BEL
+        "XLXI_23/u5/sData_r_2" BEL "XLXI_23/u5/sData_r_1" BEL
+        "XLXI_23/u5/sData_r_0";
+PIN XLXI_23/u0/u1/u1_pins<1> = BEL "XLXI_23/u0/u1/u1" PINNAME CK0;
+TIMEGRP XLXI_23_u0_genClkP_s = BEL "XLXI_23/u0/genClkP_s_BUFG" PIN
+        "XLXI_23/u0/u1/u1_pins<1>";
+PIN XLXI_23/u0/u1/u1_pins<2> = BEL "XLXI_23/u0/u1/u1" PINNAME CK1;
+TIMEGRP XLXI_23_u0_genClkN_s = BEL "XLXI_23/u0/genClkN_s_BUFG" PIN
+        "XLXI_23/u0/u1/u1_pins<2>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN XLXI_23/u0/u0_pins<3> = BEL "XLXI_23/u0/u0" PINNAME CLKIN;
+TIMEGRP fpgaClk_i = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "XLXI_23/u0/u0_pins<3>";
+TS_fpgaClk_i = PERIOD TIMEGRP "fpgaClk_i" 12 MHz HIGH 50%;
+TS_sdClkFb_i = PERIOD TIMEGRP "sdClkFb_i" 60 MHz HIGH 50%;
+TS_XLXI_23_u0_genClkP_s = PERIOD TIMEGRP "XLXI_23_u0_genClkP_s" TS_fpgaClk_i *
+        5 HIGH 50%;
+TS_XLXI_23_u0_genClkN_s = PERIOD TIMEGRP "XLXI_23_u0_genClkN_s" TS_fpgaClk_i *
+        5 PHASE 8.33333333 ns HIGH 50%;
+SCHEMATIC END;
+

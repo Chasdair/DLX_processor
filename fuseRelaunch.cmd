@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/adlx/C6/SOURCE_S25/ReadMachineSuite_ReadMachineSuite_sch_tb_isim_beh.exe" -prj "E:/adlx/C6/SOURCE_S25/ReadMachineSuite_ReadMachineSuite_sch_tb_beh.prj" "work.ReadMachineSuite_ReadMachineSuite_sch_tb" 

@@ -1,0 +1,3 @@
+MODULE slave_monitor
+	SUBMODULE MUX4_32bit
+		INSTANCE XLXI_1

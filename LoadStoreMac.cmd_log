@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym LoadStoreMac E:/adlx/C6/SOURCE_S25/LoadStoreMac.sch E:/adlx/C6/SOURCE_S25/LoadStoreMac.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LoadStoreMac E:/adlx/C6/SOURCE_S25/LoadStoreMac.sch E:/adlx/C6/SOURCE_S25/LoadStoreMac.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LoadStoreMac E:/adlx/C6/SOURCE_S25/LoadStoreMac.sch E:/adlx/C6/SOURCE_S25/LoadStoreMac.sym 

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym slave_monitor E:/adlx/C6/SOURCE_S25/slave_monitor.sch E:/adlx/C6/SOURCE_S25/slave_monitor.sym 

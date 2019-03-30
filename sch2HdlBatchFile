@@ -1,0 +1,8 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/LogicAnalyzer.vhf,-w,E:/adlx/C6/SOURCE_S25/LogicAnalyzer.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/slave_monitor.vhf,-w,E:/adlx/C6/SOURCE_S25/slave_monitor.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/Top_Level.vhf,-w,E:/adlx/C6/SOURCE_S25/Top_Level.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/LoadStoreMac.vhf,-w,E:/adlx/C6/SOURCE_S25/LoadStoreMac.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/GPR.vhf,-w,E:/adlx/C6/SOURCE_S25/GPR.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/DataPath.vhf,-w,E:/adlx/C6/SOURCE_S25/DataPath.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/SlaveMonitor.vhf,-w,E:/adlx/C6/SOURCE_S25/SlaveMonitor.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,E:/adlx/C6/SOURCE_S25/PC.vhf,-w,E:/adlx/C6/SOURCE_S25/PC.sch

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work buf4.vhd -lib work BUF3.vhd -prj SOURCE_S25 -o BUF4.spl -module BUF4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w BUF4.spl E:/adlx/C6/SOURCE_S25/BUF4.sym 
